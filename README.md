@@ -432,7 +432,7 @@ MySQL
 
 ## 👨‍💻 Autor
 
-**Gilberto Correa**
+**Gilberto Correa && Thiago Cattozzi** 
 
 Análise e Desenvolvimento de Sistemas  
 FATEC
