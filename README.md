@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./docs/project-banner.svg" width="100%" alt="Banner GESTÃO DE VAGAS">
+  <img src="./docs/project-banner.png" width="100%" alt="Banner do projeto">
 </div>
 
 <div align="center">
