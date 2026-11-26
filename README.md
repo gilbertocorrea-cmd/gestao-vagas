@@ -1,4 +1,8 @@
 <div align="center">
+  <img src="./docs/project-banner.svg" width="100%" alt="Banner GESTÃO DE VAGAS">
+</div>
+
+<div align="center">
 
 # G E S T Ã O　D E　V A G A S　//　A P I
 
