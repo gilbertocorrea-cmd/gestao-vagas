@@ -1,16 +1,72 @@
 <div align="center">
 
-# 🚀 Gestão de Vagas API
+# G E S T Ã O　D E　V A G A S　//　A P I
 
-### API RESTful desenvolvida com Java + Spring Boot
+### `JAVA 17 • SPRING BOOT 4.1.1 • MYSQL • SWAGGER`
 
-![Java](https://img.shields.io/badge/Java-17-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-4.1.1-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
-![Maven](https://img.shields.io/badge/Maven-Build-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![Swagger](https://img.shields.io/badge/Swagger-OpenAPI-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)
+**API REST de gerenciamento de vagas de emprego: cadastro, listagem paginada, consulta por ID, atualização e exclusão, com JPA, DTOs, MapStruct e Swagger.**
+
+![JAVA](https://img.shields.io/badge/JAVA-0B1020?style=for-the-badge&logo=openjdk&logoColor=ED8B00)
+![SPRING_BOOT](https://img.shields.io/badge/SPRING_BOOT-0B1020?style=for-the-badge&logo=springboot&logoColor=6DB33F)
+![MYSQL](https://img.shields.io/badge/MYSQL-0B1020?style=for-the-badge&logo=mysql&logoColor=4479A1)
+![SWAGGER](https://img.shields.io/badge/SWAGGER-0B1020?style=for-the-badge&logo=swagger&logoColor=85EA2D)
+
+`GILBERTO CORRÊA` · `SOFTWARE ENGINEERING` · `PROJECT DOCUMENTATION`
+
+[Visão geral](#visao-geral) · [Recursos](#recursos) · [Arquitetura](#arquitetura) · [Execução](#execucao)
 
 </div>
+
+---
+
+<a id="visao-geral"></a>
+
+## `PROJECT // VISÃO GERAL`
+
+API REST de gerenciamento de vagas de emprego: cadastro, listagem paginada, consulta por ID, atualização e exclusão, com JPA, DTOs, MapStruct e Swagger.
+
+<a id="recursos"></a>
+
+## `SYSTEM // INVENTÁRIO`
+
+| Recurso | Situação |
+| :--- | :--- |
+| CRUD de vagas | `Rotas documentadas` |
+| Persistência MySQL / JPA | `Configurada no código` |
+| DTOs e MapStruct | `Presentes` |
+| Swagger/OpenAPI | `Dependência configurada` |
+
+## `STRUCTURE // ORGANIZAÇÃO`
+
+- `controller/VagaController.java` — rotas `/api/vagas`
+- `service/VagaService.java` — operações e regras
+- `repository/VagaRepository.java` — persistência
+- `mapper/VagaMapper.java` — conversão
+- `dto/` e `exception/` — contratos e erros
+
+<a id="arquitetura"></a>
+
+## `ARCHITECTURE // FLUXO DO PROJETO`
+
+```mermaid
+flowchart LR
+  A["HTTP / Swagger"] --> B["VagaController"]; B --> C["VagaService"]; C --> D["VagaRepository"]; D --> E["MySQL / JPA"]; C --> F["MapStruct / DTOs"]
+```
+
+<a id="execucao"></a>
+
+## `BOOT SEQUENCE // EXECUÇÃO OU UTILIZAÇÃO`
+
+```bash
+git clone https://github.com/gilbertocorrea-cmd/gestao-vagas.git
+cd gestao-vagas
+```
+
+Use Java 17, MySQL e o Maven Wrapper do projeto. Configure a conexão com o banco conforme o ambiente e inicie com `./mvnw spring-boot:run` (Linux) ou `mvnw.cmd spring-boot:run` (Windows). Confira as requisições na seção de endpoints preservada abaixo.
+
+---
+
+## `DOCUMENTATION // REFERÊNCIA TÉCNICA ORIGINAL`
 
 ---
 
@@ -438,6 +494,18 @@ Análise e Desenvolvimento de Sistemas
 FATEC
 
 Backend • Java • Spring Boot
+
+[GitHub](https://github.com/gilbertocorrea-cmd)
+
+</div>
+
+---
+
+<div align="center">
+
+## `GESTAO VAGAS // BUILD • LEARN • EVOLVE`
+
+**Gilberto Corrêa**
 
 [GitHub](https://github.com/gilbertocorrea-cmd)
 
